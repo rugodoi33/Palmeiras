@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Palmeiras</title>
+
+    <Style>
+        h1{
+            color: darkgreen;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input#txt1{
+            
+            background-color: darkgreen;
+            color: aliceblue;
+            border: none;
+            height  : 25px;
+            margin-right: 25px;
+
+        }
+       
+        
+        input {
+            background-color: darkgreen;
+            color: aliceblue;
+            border: none;
+            height  : 25px;
+        }
+    
+    </Style>
+</head>
+
+<body>
+    <h1>PALMEIRAS TEM MUNDIAL?</h1>
+    <input type="text" name="txt1" id="txt1">
+    <input type="button" value="Clique" onclick="conf()">
+    <div id="res"></div>
+
+    <script>
+        function conf(){
+            var rec = document.querySelector('input#txt1')
+            var res = document.querySelector('div#res')
+            var op = rec.value
+            res.innerHTML = `<p>Você acha que ${op}</p>`
+
+            if ( op == 'sim','SIM' ){
+
+                res.innerHTML = `<p><strong>ESSA PORRA NUNCA TEVE MUNDIAL</p><P>51 É PÍNGA<strong></P>` 
+            }
+            else{
+
+                res.innerHTML = `<p>Temos um XEORX ROUMIS</p>`
+            }
+
+        }
+    
+    
+    </script>
+
+    
+</body>
+</html>
